@@ -7,7 +7,7 @@ const handleVisibilityChange = () => {
     video.pause();
   } else if (document.visibilityState === 'visible') {
     // Restore the saved time and play the video
-    const savedTime = localStorage.getItem('videoTime');
+    const savedTime = localStorage.getItem('videoTime'); 
     if (savedTime) {
       video.currentTime = parseFloat(savedTime);
     }
